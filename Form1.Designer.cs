@@ -31,16 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Username = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Email = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.LabelClose = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -66,16 +67,17 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // textBox1
+            // Username
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(67, 249);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(281, 35);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.Text = "Username";
+            this.Username.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Username.ForeColor = System.Drawing.SystemColors.Window;
+            this.Username.HideSelection = false;
+            this.Username.Location = new System.Drawing.Point(67, 249);
+            this.Username.Name = "Username";
+            this.Username.Size = new System.Drawing.Size(281, 35);
+            this.Username.TabIndex = 2;
+            this.Username.Text = "Username";
             // 
             // panel1
             // 
@@ -93,16 +95,17 @@
             this.panel2.Size = new System.Drawing.Size(330, 1);
             this.panel2.TabIndex = 6;
             // 
-            // textBox2
+            // Password
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox2.Location = new System.Drawing.Point(67, 320);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(281, 35);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Text = "Password";
+            this.Password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Password.ForeColor = System.Drawing.SystemColors.Window;
+            this.Password.HideSelection = false;
+            this.Password.Location = new System.Drawing.Point(67, 320);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(281, 35);
+            this.Password.TabIndex = 5;
+            this.Password.Text = "Password";
             // 
             // pictureBox3
             // 
@@ -121,17 +124,18 @@
             this.panel3.Size = new System.Drawing.Size(330, 1);
             this.panel3.TabIndex = 9;
             // 
-            // textBox3
+            // Email
             // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.Window;
-            this.textBox3.Location = new System.Drawing.Point(67, 383);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(281, 35);
-            this.textBox3.TabIndex = 8;
-            this.textBox3.Text = "Email";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Email.ForeColor = System.Drawing.SystemColors.Window;
+            this.Email.HideSelection = false;
+            this.Email.Location = new System.Drawing.Point(67, 383);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(281, 35);
+            this.Email.TabIndex = 8;
+            this.Email.Text = "Email";
+            this.Email.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // pictureBox4
             // 
@@ -150,8 +154,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(171, 49);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Sign In";
+            this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Login_Click);
             // 
             // button2
             // 
@@ -164,24 +169,40 @@
             this.button2.Text = "Register";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // LabelClose
+            // 
+            this.LabelClose.AutoSize = true;
+            this.LabelClose.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LabelClose.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelClose.Location = new System.Drawing.Point(425, 3);
+            this.LabelClose.Name = "LabelClose";
+            this.LabelClose.Size = new System.Drawing.Size(29, 29);
+            this.LabelClose.TabIndex = 13;
+            this.LabelClose.Text = "X";
+            this.LabelClose.Click += new System.EventHandler(this.LabelClose_Click);
+            this.LabelClose.MouseEnter += new System.EventHandler(this.LabelClose_MouseEnter);
+            this.LabelClose.MouseLeave += new System.EventHandler(this.LabelClose_MouseLeave);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(454, 608);
+            this.Controls.Add(this.LabelClose);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Email);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Password);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Username);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -200,16 +221,17 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Username;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Password;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Email;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label LabelClose;
     }
 }
 
